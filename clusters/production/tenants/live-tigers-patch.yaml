@@ -1,6 +1,6 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: prod-lions-tenants
+  name: live-tigers-tenants
 spec:
-  path: ./tenants/lions/prod
+  path: ./tenants/tigers/live
