@@ -1,0 +1,7 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+
+namePrefix: dev-lions-
+commonLabels:
+  toolkit.fluxcd.io/tenant: lions
+  environment: dev
