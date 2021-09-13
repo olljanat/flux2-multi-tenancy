@@ -5,5 +5,3 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  prune: true
-  validation: client
