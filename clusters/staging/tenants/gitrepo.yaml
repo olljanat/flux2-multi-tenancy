@@ -1,0 +1,6 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+spec:
+  interval: 5m
+  prune: true
+  validation: client

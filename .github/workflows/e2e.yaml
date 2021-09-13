@@ -2,7 +2,6 @@ name: e2e
 
 on:
   push:
-    branches: [ '*' ]
 
 jobs:
   kubernetes:
@@ -38,8 +37,10 @@ jobs:
           kubectl -n flux-system wait kustomization/tenants --for=condition=ready --timeout=3m
       - name: Verify tenant reconciliation
         run: |
-          kubectl -n apps wait kustomization/dev-team --for=condition=ready --timeout=1m
-          kubectl -n apps wait helmrelease/podinfo --for=condition=ready --timeout=1m
+          kubectl -n dev-tigers-apps wait kustomization/dev-tigers --for=condition=ready --timeout=1m
+          kubectl -n dev-tigers-apps wait helmrelease/podinfo --for=condition=ready --timeout=1m
+          kubectl -n dev-lions-apps wait kustomization/dev-lions --for=condition=ready --timeout=1m
+          kubectl -n dev-lions-apps wait helmrelease/podinfo --for=condition=ready --timeout=1m
       - name: Debug failure
         if: failure()
         run: |
