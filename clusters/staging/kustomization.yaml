@@ -1,11 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: tenants
-  namespace: flux-system
 resources:
   - tenants/gitrepo.yaml
 patchesStrategicMerge:
-  - tenants/dev-lions
-  - tenants/dev-tigers
-  - tenants/exp-tigers
+  - tenants/dev-lions-patch.yaml
+  - tenants/dev-tigers-patch.yaml
+  - tenants/exp-tigers-patch.yaml

@@ -1,0 +1,6 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: dev-tigers-tenants
+spec:
+  path: ./tenants/tigers/dev
