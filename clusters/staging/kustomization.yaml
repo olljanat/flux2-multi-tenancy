@@ -1,8 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - tenants/gitrepo.yaml
-patchesStrategicMerge:
-  - tenants/dev-lions-patch.yaml
-  - tenants/dev-tigers-patch.yaml
-  - tenants/exp-tigers-patch.yaml
+  - tenants/dev-lions
+  - tenants/dev-tigers
+  - tenants/exp-tigers
