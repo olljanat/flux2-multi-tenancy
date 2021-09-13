@@ -4,6 +4,7 @@ on:
   push:
     branches: [ '*' ]
 
+
 jobs:
   kubernetes:
     runs-on: ubuntu-latest
