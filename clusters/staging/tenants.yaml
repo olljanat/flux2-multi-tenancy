@@ -7,3 +7,5 @@ resources:
   - tenants/gitrepo.yaml
 patchesStrategicMerge:
   - tenants/dev-lions
+  - tenants/dev-tigers
+  - tenants/exp-tigers
