@@ -1,0 +1,7 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: prod-lions
+  namespace: prod-lions-apps
+spec:
+  path: ./tenants/lions/prod

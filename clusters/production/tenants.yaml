@@ -6,5 +6,5 @@ metadata:
 resources:
   - tenants/gitrepo.yaml
 patchesStrategicMerge:
-  - tenants/prod-lions
-  - tenants/live-tigers
+  - tenants/prod-lions-patch.yaml
+  - tenants/live-tigers-patch.yaml
